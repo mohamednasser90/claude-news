@@ -70,6 +70,50 @@ footer { color: var(--muted); font-size: 14px; margin-top: 32px; text-align: cen
 <h1>Claude Skills, Explained Like You're 5</h1>
 <p class="sub">Big pictures, few words. Read one section a day.</p>
 
+<!-- 0 -->
+<section>
+  <h2>0. What is Claude Code?</h2>
+  <p class="big">A helper that <b>reads your project, edits files, and runs commands</b>.</p>
+  <svg viewBox="0 0 640 170" role="img" aria-label="Claude Code works across surfaces with one brain">
+    <circle cx="320" cy="85" r="46" fill="var(--card)" stroke="var(--accent)" stroke-width="4"/>
+    <text x="320" y="92" text-anchor="middle" font-size="22" fill="var(--ink)">🤖</text>
+    <rect x="30" y="20" width="150" height="40" rx="10" fill="var(--code)"/><text x="105" y="46" text-anchor="middle" font-size="16" fill="var(--ink)">💻 Terminal</text>
+    <rect x="245" y="10" width="150" height="40" rx="10" fill="var(--code)"/><text x="320" y="36" text-anchor="middle" font-size="16" fill="var(--ink)">🧩 IDE</text>
+    <rect x="460" y="20" width="150" height="40" rx="10" fill="var(--code)"/><text x="535" y="46" text-anchor="middle" font-size="16" fill="var(--ink)">🖥 Desktop</text>
+    <rect x="30" y="110" width="150" height="40" rx="10" fill="var(--code)"/><text x="105" y="136" text-anchor="middle" font-size="16" fill="var(--ink)">🌐 Web</text>
+    <rect x="460" y="110" width="150" height="40" rx="10" fill="var(--code)"/><text x="535" y="136" text-anchor="middle" font-size="16" fill="var(--ink)">📱 Phone</text>
+    <path d="M180 40 L275 70 M460 40 L365 70 M180 130 L275 100 M460 130 L365 100" stroke="var(--muted)" stroke-width="2"/>
+  </svg>
+  <p>Same brain, many doors. Your <code>CLAUDE.md</code>, skills and settings work on all of them.</p>
+  <table>
+    <tr><th>Start it</th><th>How</th></tr>
+    <tr><td>Install (macOS, Linux, WSL)</td><td><code>curl -fsSL https://claude.ai/install.sh | bash</code></td></tr>
+    <tr><td>Check it</td><td><code>claude --version</code></td></tr>
+    <tr><td>Run in a project</td><td><code>cd your-project</code>, then <code>claude</code></td></tr>
+    <tr><td>One-off task</td><td><code>claude "write tests for the auth module"</code></td></tr>
+    <tr><td>Script / pipe</td><td><code>claude -p "..."</code> (print mode)</td></tr>
+  </table>
+  <div class="tip"><b>Good to know:</b> Native installs update themselves. Homebrew and WinGet do not; upgrade them by hand.</div>
+  <h3>Where it runs</h3>
+  <p>Terminal · VS Code and JetBrains · Desktop app · <a href="https://claude.ai/code">claude.ai/code</a> · Claude mobile app · Slack.</p>
+  <h3>Built-in helpers you'll see in the docs</h3>
+  <table>
+    <tr><th>Feature</th><th>Simple meaning</th></tr>
+    <tr><td><code>CLAUDE.md</code> / auto memory</td><td>Notes Claude reads at the start of every session</td></tr>
+    <tr><td>Skills</td><td>Repeatable workflows, like <code>/review-pr</code></td></tr>
+    <tr><td>Hooks</td><td>Shell commands that run before or after an action, like auto-format on save</td></tr>
+    <tr><td>MCP</td><td>An open standard to connect tools: Drive, Jira, Slack, your own tools</td></tr>
+    <tr><td>Sub-agents</td><td>Helpers that work on parts of a task at the same time</td></tr>
+    <tr><td>Routines</td><td>Scheduled runs in the cloud, even when your computer is off. Create with <code>/schedule</code></td></tr>
+    <tr><td><code>/loop</code></td><td>Repeat a prompt inside one CLI session for quick polling</td></tr>
+    <tr><td>Remote Control</td><td>Continue a local session from your phone or another browser</td></tr>
+    <tr><td><code>claude --teleport</code></td><td>Pull a web session into your terminal</td></tr>
+    <tr><td>Agent SDK</td><td>Build your own agents on Claude Code's tools</td></tr>
+  </table>
+  <div class="try"><b>Free courses:</b> <a href="https://academy.claude.com/courses/claude-code-101">Claude Code 101</a> and <a href="https://academy.claude.com/courses/claude-code-in-action">Claude Code in Action</a> on Claude Academy.</div>
+  <p class="sub">Source: <a href="https://code.claude.com/docs/en/overview">code.claude.com/docs/en/overview</a>. Read the full doc index at <a href="https://code.claude.com/docs/llms.txt">llms.txt</a>.</p>
+</section>
+
 <!-- 1 -->
 <section>
   <h2>1. What is a Skill?</h2>
